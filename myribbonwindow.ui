@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyRibbonWindow</class>
+ <widget class="RibbonMainWindow" name="MyRibbonWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyRibbonWindow</string>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>Базы данных</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2"/>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Программные продукты</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="RibbonBar" name="ribbonBar">
+   <widget class="RibbonPage" name="homePage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>44</y>
+      <width>480</width>
+      <height>92</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>480</width>
+      <height>92</height>
+     </size>
+    </property>
+    <property name="windowTitle">
+     <string/>
+    </property>
+    <property name="title">
+     <string>&amp;Главная</string>
+    </property>
+    <widget class="RibbonGroup" name="Data">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>37</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Данные</string>
+     </property>
+     <property name="titleElideMode">
+      <enum>Qt::TextElideMode::ElideNone</enum>
+     </property>
+    </widget>
+    <widget class="RibbonGroup" name="Setting">
+     <property name="geometry">
+      <rect>
+       <x>38</x>
+       <y>1</y>
+       <width>44</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Настройки</string>
+     </property>
+    </widget>
+    <widget class="RibbonGroup" name="View">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>1</y>
+       <width>37</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Вид</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RibbonMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>DevMachines/QtitanRibbon</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RibbonBar</class>
+   <extends>QMenuBar</extends>
+   <header>DevMachines/QtitanRibbon</header>
+   <addpagemethod>addPage</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>RibbonPage</class>
+   <extends>QWidget</extends>
+   <header>DevMachines/QtitanRibbon</header>
+   <addpagemethod>addGroup</addpagemethod>
+  </customwidget>
+  <customwidget>
+   <class>RibbonGroup</class>
+   <extends>QWidget</extends>
+   <header>DevMachines/QtitanRibbon</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
